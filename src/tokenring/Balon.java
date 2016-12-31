@@ -27,4 +27,8 @@ public class Balon {
         if(up.tryLock()) return true;
         else return false;
     }
+    
+    public void dejarBalon(){
+        up.unlock();
+    }
 }
