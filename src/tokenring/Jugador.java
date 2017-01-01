@@ -61,7 +61,7 @@ public class Jugador implements Runnable{
     }
     
     public void recibirTestimonio(){
-        System.out.println("Deseas recibir el testimonio (1/0)");
+        System.out.println(this.getNombre() + ", deseas recibir el testimonio (1/0)");
         int rpta = sc.nextInt();
         if(rpta == 1)   this.testimonio = true;
         else
@@ -70,6 +70,7 @@ public class Jugador implements Runnable{
     
     public void  pasarTestimonio(){
         this.testimonio = false;
+        System.out.println("Yo, "+this.getNombre()+ ", estoy pasando el testimonio a "+ this.getSiguiente().getNombre());
         this.siguiente.recibirTestimonio();
     }
     
@@ -81,7 +82,7 @@ public class Jugador implements Runnable{
                     this.darPataditas();
                     this.balon.dejarBalon();
                     this.pasarTestimonio();
-                    System.out.print("¿Seguiras jugando?(1/0)");
+                    System.out.print(this.getNombre() + ", ¿seguiras jugando?(1/0)");
                     if(sc.nextInt() == 0){
                         this.anterior.setSiguiente(this.siguiente);
                         break;
