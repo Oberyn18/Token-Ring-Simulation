@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Jugador implements Runnable{
     private String nombre;
     private int turno;
-    private Boolean testimonio;
+    volatile private Boolean testimonio;
     private Jugador siguiente;
     private Jugador anterior;
     private Balon balon;
