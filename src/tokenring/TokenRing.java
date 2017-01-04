@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TokenRing {
 
-    private static final int NUM_JUGADORES = 5;
+    private static final int NUM_JUGADORES = 2;
     public static void main(String[] args) throws InterruptedException{        
         Scanner sc = new Scanner(System.in);
         
@@ -63,24 +63,5 @@ public class TokenRing {
             }
             System.out.println("El balon dio " + pelota.getPataditas() + " pataditas.");
         }
-        
-        /*
-        // Para finalizar el ExecutorService tomé codigo de: 
-        try {
-            System.out.println("attempt to shutdown executor");
-            threadPool.shutdown();
-            threadPool.awaitTermination(5, TimeUnit.SECONDS);
-        }
-        catch (InterruptedException e) {
-            System.err.println("tasks interrupted");
-        }
-        finally {
-            if (!threadPool.isTerminated()) {
-                System.err.println("cancel non-finished tasks");
-            }
-            threadPool.shutdownNow();
-            System.out.println("shutdown finished");
-        }
-        */
     }
 }

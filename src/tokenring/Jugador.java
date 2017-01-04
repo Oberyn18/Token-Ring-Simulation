@@ -85,6 +85,7 @@ public class Jugador implements Runnable{
                     System.out.print(this.getNombre() + ", ¿seguiras jugando?(1/0)");
                     if(sc.nextInt() == 0){
                         this.anterior.setSiguiente(this.siguiente);
+                        this.siguiente.setAnterior(this.anterior);
                         break;
                     }
                 }
