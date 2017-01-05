@@ -10,12 +10,14 @@ import java.util.concurrent.TimeUnit;
 public class TokenRing {
 
     private static final int NUM_JUGADORES = 5;
+    
     public static void main(String[] args) throws InterruptedException{        
                 
         Jugador[] jugadores = null;
         Balon pelota = new Balon();
         
         Interfaz grafico = new Interfaz();
+        grafico.setVisible(true);
         
         
         jugadores = new Jugador[NUM_JUGADORES];
@@ -23,7 +25,9 @@ public class TokenRing {
         // A la espera de que el botón sea pulsado
         while(true){
             // Botón pulsado, ahora salimos
-            if(grafico.getjButton6().isSelected()){
+            if(!grafico.flagIniciar){
+                System.out.print("");
+            } else {
                 jugadores[0] = new Jugador(grafico.getjTextField1().getText(), 1, pelota, grafico);
                 jugadores[1] = new Jugador(grafico.getjTextField2().getText(), 2, pelota, grafico);
                 jugadores[2] = new Jugador(grafico.getjTextField3().getText(), 3, pelota, grafico);
@@ -31,15 +35,17 @@ public class TokenRing {
                 jugadores[4] = new Jugador(grafico.getjTextField5().getText(), 5, pelota, grafico);
                 // Desactiva el botón
                 grafico.getjButton6().setEnabled(false);
+                // Desactivamos el cambio de nombres
+                grafico.getjTextField1().setEnabled(false);
+                grafico.getjTextField2().setEnabled(false);
+                grafico.getjTextField3().setEnabled(false);
+                grafico.getjTextField4().setEnabled(false);
+                grafico.getjTextField5().setEnabled(false);
                 break;
             }
         }
         // ------------------------------------------------------
         
-        // Este jugador empezará con el testimonio
-           jugadores[0].setTestimonio(true);
-        // --------------------------------------------
-         
         // Formamos el anillo
         for(int i = 0; i < NUM_JUGADORES-1; i++){
             jugadores[i].setSiguiente(jugadores[i+1]);
@@ -47,7 +53,6 @@ public class TokenRing {
         }
         jugadores[NUM_JUGADORES-1].setSiguiente(jugadores[0]);
         jugadores[0].setAnterior(jugadores[NUM_JUGADORES-1]);
-        
         //---------------------------------------------
         
         // PROBARÉ SI ESTAMOS CREANDO UN TOKEN RING
@@ -61,6 +66,15 @@ public class TokenRing {
         }
         // ----------------------------------------------
         
+        
+        
+        //Este jugador empezará con el testimonio       
+           jugadores[0].setTestimonio(true);
+           grafico.getjTextField6().setEnabled(true);
+           grafico.getjButton1().setEnabled(true);
+        // --------------------------------------------
+
+        /*
         ExecutorService threadPool = Executors.newFixedThreadPool(NUM_JUGADORES);
         try{
             for(int i = 0; i < NUM_JUGADORES; i++){
@@ -77,5 +91,8 @@ public class TokenRing {
             }
             System.out.println("El balon dio " + pelota.getPataditas() + " pataditas.");
         }
+        
+        */
+                
     }
 }

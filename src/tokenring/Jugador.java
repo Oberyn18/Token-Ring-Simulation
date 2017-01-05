@@ -73,9 +73,23 @@ public class Jugador implements Runnable{
     }
     
     public void recibirTestimonio(){
+        switch(this.getTurno()){
+            case 1: 
+                    this.interfaz.getjTextField6().setEnabled(true);
+                    this.interfaz.getjButton1().setEnabled(true);
+                    /*
+                    while(true){
+                        if(this.interfaz.flagBtn1){
+                            break;
+                        }
+                    }
+                    */
+                    break;
+        }
+        
         System.out.println(this.getNombre() + ", deseas recibir el testimonio (1/0)");
-        int rpta = sc.nextInt();
-        if(rpta == 1)   this.testimonio = true;
+
+        if(true)   this.testimonio = true;
         else
             this.pasarTestimonio();
     }
@@ -95,7 +109,7 @@ public class Jugador implements Runnable{
                     this.balon.dejarBalon();
                     this.pasarTestimonio();
                     System.out.print(this.getNombre() + ", ¿seguiras jugando?(1/0)");
-                    if(sc.nextInt() == 0){
+                    if(true){
                         this.anterior.setSiguiente(this.siguiente);
                         this.siguiente.setAnterior(this.anterior);
                         break;
