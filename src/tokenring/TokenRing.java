@@ -9,19 +9,33 @@ import java.util.concurrent.TimeUnit;
 
 public class TokenRing {
 
-    private static final int NUM_JUGADORES = 2;
+    private static final int NUM_JUGADORES = 5;
     public static void main(String[] args) throws InterruptedException{        
-        Scanner sc = new Scanner(System.in);
-        
+                
         Jugador[] jugadores = null;
         Balon pelota = new Balon();
         
+        Interfaz grafico = new Interfaz();
+        
+        
         jugadores = new Jugador[NUM_JUGADORES];
-        for(int i = 0; i < NUM_JUGADORES; i++){
-            System.out.print("Ingrese nombre del jugador: ");
-            String name = sc.next();
-            jugadores[i] = new Jugador(name, i+1, pelota);
+        
+        // A la espera de que el botón sea pulsado
+        while(true){
+            // Botón pulsado, ahora salimos
+            if(grafico.getjButton6().isSelected()){
+                jugadores[0] = new Jugador(grafico.getjTextField1().getText(), 1, pelota, grafico);
+                jugadores[1] = new Jugador(grafico.getjTextField2().getText(), 2, pelota, grafico);
+                jugadores[2] = new Jugador(grafico.getjTextField3().getText(), 3, pelota, grafico);
+                jugadores[3] = new Jugador(grafico.getjTextField4().getText(), 4, pelota, grafico);
+                jugadores[4] = new Jugador(grafico.getjTextField5().getText(), 5, pelota, grafico);
+                // Desactiva el botón
+                grafico.getjButton6().setEnabled(false);
+                break;
+            }
         }
+        // ------------------------------------------------------
+        
         // Este jugador empezará con el testimonio
            jugadores[0].setTestimonio(true);
         // --------------------------------------------

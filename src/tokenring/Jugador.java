@@ -9,13 +9,25 @@ public class Jugador implements Runnable{
     private Jugador siguiente;
     private Jugador anterior;
     private Balon balon;
-    Scanner sc = new Scanner(System.in);
-    public Jugador(String nombre, int turno, Balon balon) {
+    private Interfaz interfaz;
+    
+    public Jugador(String nombre, int turno, Balon balon, Interfaz interfaz) {
         this.nombre = nombre;
         this.turno = turno;
         this.balon = balon;
+        this.interfaz = interfaz;
         testimonio = false;
     }
+    
+    
+    public Interfaz getInterfaz(){
+        return interfaz;
+    }
+    
+    public void setInterfaz(Interfaz interfaz){
+        this.interfaz = interfaz;
+    }
+    
     public Jugador getAnterior() {
         return anterior;
     }
