@@ -9,9 +9,15 @@ import java.util.concurrent.TimeUnit;
 
 public class TokenRing {
 
-    private static final int NUM_JUGADORES = 2;
+    private static final int NUM_JUGADORES = 3;    
+    
     public static void main(String[] args) throws InterruptedException{        
-        Scanner sc = new Scanner(System.in);
+        
+        Escaner principal = new Escaner();
+        
+        // Tomamos el escáner
+        principal.tomarEscaner();
+        // -------------------------------
         
         Jugador[] jugadores = null;
         Balon pelota = new Balon();
@@ -19,11 +25,18 @@ public class TokenRing {
         jugadores = new Jugador[NUM_JUGADORES];
         for(int i = 0; i < NUM_JUGADORES; i++){
             System.out.print("Ingrese nombre del jugador: ");
-            String name = sc.next();
+            String name = principal.getSc().next();
             jugadores[i] = new Jugador(name, i+1, pelota);
+            jugadores[i].setSc(principal);
         }
-        // Este jugador empezará con el testimonio
+        
+        // Dejamos el Escáner
+        principal.dejarEscaner();
+        // ---------------------------
+        
+        // Este jugador empezará con el testimonio y con el escáner
            jugadores[0].setTestimonio(true);
+           jugadores[0].recibeEscaner();
         // --------------------------------------------
          
         // Formamos el anillo
