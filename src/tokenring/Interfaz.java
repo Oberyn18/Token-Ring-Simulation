@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tokenring;
 
 import javax.swing.JButton;
@@ -119,20 +114,45 @@ public class Interfaz extends javax.swing.JFrame {
 
         jButton2.setText("Patea!");
         jButton2.setEnabled(false);
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
 
         jButton3.setText("Patea!");
         jButton3.setEnabled(false);
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
         jButton4.setText("Patea!");
         jButton4.setEnabled(false);
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         jButton5.setText("Patea!");
         jButton5.setEnabled(false);
         jButton5.setFocusCycleRoot(true);
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
 
         jButton1.setText("Patea!");
         jButton1.setEnabled(false);
         jButton1.setFocusCycleRoot(true);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -255,15 +275,33 @@ public class Interfaz extends javax.swing.JFrame {
         this.flagIniciar = true;
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    public Boolean flagIniciar = false;
-    public Boolean flagBtn1 = false;
-    public Boolean flagBtn2 = false;
-    public Boolean flagBtn3 = false;
-    public Boolean flagBtn4 = false;
-    public Boolean flagBtn5 = false;
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        this.flagBtn1 = true;
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        this.flagBtn2 = true;
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        this.flagBtn3 = true;
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        this.flagBtn4 = true;
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        this.flagBtn5 = true;
+    }//GEN-LAST:event_jButton5MouseClicked
+    
+    public volatile Boolean flagIniciar;
+    public volatile Boolean flagBtn1;
+    public volatile Boolean flagBtn2;
+    public volatile Boolean flagBtn3;
+    public volatile Boolean flagBtn4;
+    public volatile Boolean flagBtn5;
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -296,6 +334,10 @@ public class Interfaz extends javax.swing.JFrame {
         });
     }
 
+    public void setFlagBtn5(Boolean flagBtn5) {
+        this.flagBtn5 = flagBtn5;
+    }
+    
     public JButton getjButton2() {
         return jButton2;
     }

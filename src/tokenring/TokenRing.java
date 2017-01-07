@@ -17,6 +17,12 @@ public class TokenRing {
         Balon pelota = new Balon();
         
         Interfaz grafico = new Interfaz();
+        grafico.flagIniciar = false;
+        grafico.flagBtn1 = false;
+        grafico.flagBtn2 = false;
+        grafico.flagBtn3 = false;
+        grafico.flagBtn4 = false;
+        grafico.flagBtn5 = false;
         grafico.setVisible(true);
         
         
@@ -72,9 +78,10 @@ public class TokenRing {
            jugadores[0].setTestimonio(true);
            grafico.getjTextField6().setEnabled(true);
            grafico.getjButton1().setEnabled(true);
+           
         // --------------------------------------------
 
-        /*
+
         ExecutorService threadPool = Executors.newFixedThreadPool(NUM_JUGADORES);
         try{
             for(int i = 0; i < NUM_JUGADORES; i++){
@@ -89,10 +96,9 @@ public class TokenRing {
             while (!threadPool.isTerminated()) {
                 Thread.sleep(1000);
             }
-            System.out.println("El balon dio " + pelota.getPataditas() + " pataditas.");
+            //System.out.println("El balon dio " + pelota.getPataditas() + " pataditas.");
         }
         
-        */
                 
     }
 }
