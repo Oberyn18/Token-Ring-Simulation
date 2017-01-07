@@ -21,8 +21,8 @@ public class Balon {
         this.pataditas = pataditas;
     }
     
-    public void aumentarPataditas(){
-        pataditas++;
+    public void aumentarPataditas(int numPataditas){
+        pataditas += numPataditas;
     }
     
     public boolean tomarBalon(){
