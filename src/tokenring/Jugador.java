@@ -1,6 +1,7 @@
 package tokenring;
 
 import java.util.Scanner;
+import javafx.scene.paint.Color;
 
 public class Jugador implements Runnable {
 
@@ -85,12 +86,14 @@ public class Jugador implements Runnable {
                     switch (this.getTurno()) {
                         case 1:
                                 this.interfaz.getjTextField6().setEnabled(true);
+                                this.interfaz.getjTextField6().setBackground(java.awt.Color.green);
                                 this.interfaz.getjButton1().setEnabled(true);
                                 while (true) {
                                     if (this.interfaz.flagBtn1) {
                                         if (!" ".equals(this.interfaz.getjTextField6().getText())) {
                                             this.interfaz.flagBtn1 = false;
                                             this.interfaz.getjTextField6().setEnabled(false);
+                                            this.interfaz.getjTextField6().setBackground(java.awt.Color.red);
                                             this.interfaz.getjButton1().setEnabled(false);
                                             if (!"0".equals(this.interfaz.getjTextField6().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField6().getText()));
@@ -112,12 +115,14 @@ public class Jugador implements Runnable {
                             
                         case 2:
                                 this.interfaz.getjTextField7().setEnabled(true);
+                                this.interfaz.getjTextField7().setBackground(java.awt.Color.green);
                                 this.interfaz.getjButton2().setEnabled(true);
                                 while (true) {
                                     if (this.interfaz.flagBtn2) {
                                         if (!" ".equals(this.interfaz.getjTextField7().getText())) {
                                             this.interfaz.flagBtn2 = false;
                                             this.interfaz.getjTextField7().setEnabled(false);
+                                            this.interfaz.getjTextField7().setBackground(java.awt.Color.red);
                                             this.interfaz.getjButton2().setEnabled(false);
                                             if (!"0".equals(this.interfaz.getjTextField7().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField7().getText()));
@@ -138,12 +143,14 @@ public class Jugador implements Runnable {
                                 
                         case 3:
                                 this.interfaz.getjTextField8().setEnabled(true);
+                                this.interfaz.getjTextField8().setBackground(java.awt.Color.green);
                                 this.interfaz.getjButton3().setEnabled(true);
                                 while (true) {
                                     if (this.interfaz.flagBtn3) {
                                         if (!" ".equals(this.interfaz.getjTextField8().getText())) {
                                             this.interfaz.flagBtn3 = false;
                                             this.interfaz.getjTextField8().setEnabled(false);
+                                            this.interfaz.getjTextField8().setBackground(java.awt.Color.red);
                                             this.interfaz.getjButton3().setEnabled(false);
                                             if (!"0".equals(this.interfaz.getjTextField8().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField8().getText()));
@@ -165,11 +172,13 @@ public class Jugador implements Runnable {
                         case 4:
                                 this.interfaz.getjTextField9().setEnabled(true);
                                 this.interfaz.getjButton4().setEnabled(true);
+                                this.interfaz.getjTextField9().setBackground(java.awt.Color.green);
                                 while (true) {
                                     if (this.interfaz.flagBtn4) {
                                         if (!" ".equals(this.interfaz.getjTextField9().getText())) {
                                             this.interfaz.flagBtn4 = false;
                                             this.interfaz.getjTextField9().setEnabled(false);
+                                            this.interfaz.getjTextField9().setBackground(java.awt.Color.red);
                                             this.interfaz.getjButton4().setEnabled(false);
                                             if (!"0".equals(this.interfaz.getjTextField9().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField9().getText()));
@@ -190,12 +199,14 @@ public class Jugador implements Runnable {
 
                         case 5:
                                 this.interfaz.getjTextField10().setEnabled(true);
+                                this.interfaz.getjTextField10().setBackground(java.awt.Color.green);
                                 this.interfaz.getjButton5().setEnabled(true);
                                 while (true) {
                                     if (this.interfaz.flagBtn5) {
                                         if (!" ".equals(this.interfaz.getjTextField10().getText())) {
                                             this.interfaz.flagBtn5 = false;
                                             this.interfaz.getjTextField10().setEnabled(false);
+                                            this.interfaz.getjTextField10().setBackground(java.awt.Color.red);
                                             this.interfaz.getjButton5().setEnabled(false);
                                             if (!"0".equals(this.interfaz.getjTextField10().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField10().getText()));

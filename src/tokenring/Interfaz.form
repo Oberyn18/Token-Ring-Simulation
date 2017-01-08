@@ -4,8 +4,8 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="Simulacion del Token Ring Algorithm"/>
-    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="5" green="90" red="3" type="rgb"/>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="25" green="9a" red="2c" type="rgb"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -30,9 +30,9 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                       <Component id="jTextField9" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -44,9 +44,9 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jTextField8" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jTextField3" min="-2" max="-2" attributes="0"/>
@@ -64,9 +64,9 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                       <Component id="jTextField10" min="-2" pref="55" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -106,20 +106,6 @@
               </Group>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel1" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="276" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
               <Component id="jLabel7" min="-2" pref="98" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
@@ -127,9 +113,21 @@
               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="547" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jButton6" min="-2" pref="99" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="231" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jButton6" min="-2" pref="99" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="239" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="251" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -169,10 +167,10 @@
                           <Component id="jTextField10" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="jButton5" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel2" min="-2" pref="57" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jLabel2" min="-2" pref="57" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="36" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
@@ -191,15 +189,17 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jTextField9" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="jButton4" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jTextField8" min="-2" pref="22" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                       <Component id="jButton6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jTextField8" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="jButton3" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -212,6 +212,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lato Semibold" size="15" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9d" green="5e" red="59" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Jugador 1"/>
       </Properties>
     </Component>
@@ -219,6 +222,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lato Semibold" size="15" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9d" green="5e" red="59" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Jugador 2"/>
       </Properties>
@@ -228,6 +234,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lato Semibold" size="15" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9d" green="5e" red="59" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Jugador 3"/>
       </Properties>
     </Component>
@@ -235,6 +244,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lato Semibold" size="15" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9d" green="5e" red="59" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Jugador 4"/>
       </Properties>
@@ -244,6 +256,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lato Semibold" size="15" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="9d" green="5e" red="59" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Jugador 5"/>
       </Properties>
       <Events>
@@ -252,8 +267,14 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="18" green="e1" red="57" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="IPAexGothic" size="15" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="b0" green="8" red="1b" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="INICIAR"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -267,6 +288,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField7">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ingresa ac&#xe1; el numero de pataditas del jugador 2"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
@@ -276,6 +300,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField6">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="java.awt.Color.red" type="code"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ingresa ac&#xe1; el numero de pataditas del jugador 1"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
@@ -285,6 +312,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField8">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ingresa ac&#xe1; el numero de pataditas del jugador 3"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
@@ -294,6 +324,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField10">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ingresa ac&#xe1; el numero de pataditas del jugador 5"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
@@ -303,6 +336,9 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField9">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
         <Property name="toolTipText" type="java.lang.String" value="Ingresa ac&#xe1; el numero de pataditas del jugador 4"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
