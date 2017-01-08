@@ -95,7 +95,8 @@ public class Jugador implements Runnable {
                                             if (!"0".equals(this.interfaz.getjTextField6().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField6().getText()));
                                                 this.interfaz.getjTextField6().setText("");
-                                                System.out.println("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+                                                this.interfaz.getjLabel1().setText("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+
                                             }
                                             this.balon.dejarBalon();
                                             this.pasarTestimonio();
@@ -121,7 +122,7 @@ public class Jugador implements Runnable {
                                             if (!"0".equals(this.interfaz.getjTextField7().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField7().getText()));
                                                 this.interfaz.getjTextField7().setText("");
-                                                System.out.println("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+                                                this.interfaz.getjLabel1().setText("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
                                             }
                                             this.balon.dejarBalon();
                                             this.pasarTestimonio();
@@ -147,7 +148,7 @@ public class Jugador implements Runnable {
                                             if (!"0".equals(this.interfaz.getjTextField8().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField8().getText()));
                                                 this.interfaz.getjTextField8().setText("");
-                                                System.out.println("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+                                                this.interfaz.getjLabel1().setText("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
                                             }
                                             this.balon.dejarBalon();
                                             this.pasarTestimonio();
@@ -173,7 +174,7 @@ public class Jugador implements Runnable {
                                             if (!"0".equals(this.interfaz.getjTextField9().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField9().getText()));
                                                 this.interfaz.getjTextField9().setText("");
-                                                System.out.println("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+                                                this.interfaz.getjLabel1().setText("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
                                             }
                                             this.balon.dejarBalon();
                                             this.pasarTestimonio();
@@ -199,7 +200,7 @@ public class Jugador implements Runnable {
                                             if (!"0".equals(this.interfaz.getjTextField10().getText())) {
                                                 this.darPataditas(Integer.parseInt(this.interfaz.getjTextField10().getText()));
                                                 this.interfaz.getjTextField10().setText("");
-                                                System.out.println("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
+                                                this.interfaz.getjLabel1().setText("El balon ha dado hasta ahora " + this.balon.getPataditas() + " pataditas.");
                                             }
                                             this.balon.dejarBalon();
                                             this.pasarTestimonio();

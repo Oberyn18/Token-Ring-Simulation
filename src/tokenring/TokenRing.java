@@ -97,8 +97,6 @@ public class TokenRing {
                 Thread.sleep(1000);
             }
             //System.out.println("El balon dio " + pelota.getPataditas() + " pataditas.");
-        }
-        
-                
+        }   
     }
 }
